@@ -27,7 +27,7 @@ scope = [
 
 # authentication using streamlit (for deployment)
 creds = ServiceAccountCredentials.from_json_keyfile_dict(
-    st.secrets["client_email"],
+    st.secrets["gcp_service_account"],
     scope,
 )
 client = gspread.authorize(creds)
