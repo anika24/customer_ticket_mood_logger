@@ -1,4 +1,4 @@
-# Mood Logger – Mochi Health
+# Mood Logger for Customer Tickets
 
 A Streamlit application that lets users:
 
