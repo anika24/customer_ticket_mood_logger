@@ -3,9 +3,9 @@
 A Streamlit application that lets users:
 
 - Log a mood of a customer submitted ticket with timestamp and optional notes  
-- Store mood entries in a Google Sheet using a service account  
+- Store mood entries in a Google Sheet
 - Visualize mood counts for a selected date or date range  
-- Toggle visibility of the bar chart  
+- Toggle visibility of the bar chart 
 
 ---
 
@@ -40,13 +40,12 @@ A Streamlit application that lets users:
 
 ---
 
-## 📦 Run locally
+## How to run locally
 
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-url>
-cd mood-logger
+git clone https://github.com/anika24/customer_ticket_mood_logger.git
 ```
 
 2. Create venv
@@ -61,7 +60,17 @@ source venv/bin/activate
 pip install -r requirements.txt 
 ```
 
-4. Run the app and access it at `http://localhost:8501`:
+4. Enable Google Sheets integration:
+
+1. Go to **Google Cloud Console → IAM & Admin → Service Accounts**
+2. Create a **new service account**
+3. Generate a **JSON key** for the service account
+4. Download the JSON file and place it in the project root (this file is gitignored)
+5. Share your Google Sheet with the service account email  
+   → e.g., `your-service-account@your-project.iam.gserviceaccount.com`
+6. Update `app.py` accordingly
+
+5. Run the app and access it at `http://localhost:8501`:
 
 ```bash
 streamlit run app.py
