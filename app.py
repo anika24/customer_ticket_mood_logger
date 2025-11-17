@@ -62,7 +62,7 @@ if st.button("Submit"):
 
 
 # --- Visualization ---
-st.subheader("Mood Count")
+st.subheader("Visualize Moods")
 
 data = sheet.get_all_records()
 df = pd.DataFrame(data)
@@ -129,9 +129,9 @@ else:
             labels = mood_counts["mood"].astype(str).tolist()
 
             if mode == "Single Date":
-                chart_title = f"Mood Trend for {selected_date}"
+                chart_title = f"Customer Ticket Mood Trend for {selected_date}"
             else:
-                chart_title = f"Mood Trend from {start_date} to {end_date}"
+                chart_title = f"Customer Ticket Mood Trend from {start_date} to {end_date}"
 
             fig = go.Figure()
             fig.add_bar(
