@@ -18,10 +18,17 @@ scope = [
     "https://www.googleapis.com/auth/drive"
 ]
 
-# authentication
-creds = ServiceAccountCredentials.from_json_keyfile_name(
-    SERVICE_ACCOUNT_FILE,
-    scope
+# authentication using localhost (for local development)
+# creds = ServiceAccountCredentials.from_json_keyfile_name(
+#     SERVICE_ACCOUNT_FILE,
+#     scope
+# )
+# client = gspread.authorize(creds)
+
+# authentication using streamlit (for deployment)
+creds = ServiceAccountCredentials.from_json_keyfile_dict(
+    st.secrets["gcp_service_account"],
+    scope,
 )
 client = gspread.authorize(creds)
 

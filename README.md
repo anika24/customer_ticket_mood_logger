@@ -36,7 +36,6 @@ A Streamlit application that lets users:
 
 ### Links
 - [Google sheets data store](https://docs.google.com/spreadsheets/d/1Jgv2oIqPVlFLp87fUkjMB6SuCKOn9Q7BasiUPGOds0Y/edit?usp=sharing)
-- [Deployed Streamlit App](https://share.streamlit.io/mochi-health/mood-logger/main/app.py)
 
 ---
 
@@ -62,13 +61,12 @@ pip install -r requirements.txt
 
 4. Enable Google Sheets integration:
 
-1. Go to **Google Cloud Console → IAM & Admin → Service Accounts**
-2. Create a **new service account**
-3. Generate a **JSON key** for the service account
-4. Download the JSON file and place it in the project root (this file is gitignored)
-5. Share your Google Sheet with the service account email  
-   → e.g., `your-service-account@your-project.iam.gserviceaccount.com`
-6. Update `app.py` accordingly
+- Go to **Google Cloud Console → IAM & Admin → Service Accounts**
+- Create a **new service account**
+- Generate a **JSON key** for the service account
+- Download the JSON file and place it in the project root
+- Share your Google Sheet with the service account email  
+- Update `app.py` accordingly
 
 5. Run the app and access it at `http://localhost:8501`:
 
