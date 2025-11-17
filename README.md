@@ -36,6 +36,7 @@ A Streamlit application that lets users:
 
 ### Links
 - [Google sheets data store](https://docs.google.com/spreadsheets/d/1Jgv2oIqPVlFLp87fUkjMB6SuCKOn9Q7BasiUPGOds0Y/edit?usp=sharing)
+- [Streamlit app](https://aarora-mochi-health.streamlit.app/)
 
 ---
 
